@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Allow scrolling */
+  background-color: #000; /* Dark background */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure the root element takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  text-align: center;
+  padding-top: 600px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: transparent; /* Transparent background */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a, .navbar button {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar a:hover, .navbar button:hover {
+  color: #16a085;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: #fff; /* Placeholder background color */
+}
+
+.name {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Dropdown effect CSS */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #34495e;
+}
+
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.content__container:before {
+  content: '[';
+  position: absolute;
+  left: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  animation: opacity 2s infinite;
+}
+
+.content__container:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  animation: opacity 2s infinite;
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: change 10s infinite;
+}
+
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@keyframes opacity {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes change {
+  0%, 12.66%, 100% { transform: translate3d(0, 0, 0); }
+  16.66%, 29.32% { transform: translate3d(0, -25%, 0); }
+  33.32%, 45.98% { transform: translate3d(0, -50%, 0); }
+  49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
+  66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
+  83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: #16a085;
+  margin: 20px 0;
+}
+
+.experience {
+  margin-top: 40px; /* Increase margin to move the experience section down */
+  text-align: left;
+  max-width: 800px;
+}
+
+.experience h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.experience-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  background-color: #1e1e1e;
+  padding: 10px; /* Adjust padding for better alignment */
+  border-radius: 10px;
+  width: 280px; /* Adjust width for better alignment */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+.experience-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.projects {
+  margin-top: 40px; /* Increase margin to move the projects section down */
+  text-align: left;
+  max-width: 800px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.projects-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 10px; /* Adjust padding for better alignment */
+  border-radius: 10px;
+  width: 280px; /* Adjust width for better alignment */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
