@@ -22,7 +22,7 @@ html, body {
   justify-content: flex-start; /* Align items to the top */
   align-items: center;
   text-align: center;
-  padding-top: 600px;
+  margin-top: 600px;
 }
 
 .navbar {
@@ -52,12 +52,23 @@ html, body {
   color: #16a085;
 }
 
+.navbar-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  border: 5px solid white; /* Add a white border */
   margin-bottom: 20px;
   background-color: #fff; /* Placeholder background color */
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
 }
 
 .name {
@@ -107,6 +118,7 @@ body {
   font-size: 42px;
   line-height: 40px;
   animation: opacity 2s infinite;
+  margin-bottom: 50px;
 }
 
 .content__container__text {
@@ -117,7 +129,7 @@ body {
 
 .content__container__list {
   margin-top: 0;
-  padding-left: 110px;
+  padding-left: 50px;
   text-align: left;
   list-style: none;
   animation: change 10s infinite;
@@ -125,7 +137,7 @@ body {
 
 .content__container__list__item {
   line-height: 40px;
-  margin: 0;
+  margin: -5px;
 }
 
 @keyframes opacity {
@@ -162,6 +174,7 @@ body {
 
 .experience-cards {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
   margin-bottom: 20px;
@@ -169,9 +182,11 @@ body {
 
 .experience-card {
   background-color: #1e1e1e;
-  padding: 10px; /* Adjust padding for better alignment */
+  padding: 20px; /* Adjust padding for better alignment */
   border-radius: 10px;
-  width: 280px; /* Adjust width for better alignment */
+  display: flex;
+  align-items: center;
+  gap: 20px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -181,10 +196,14 @@ body {
 }
 
 .experience-card img {
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
-  margin-bottom: 10px;
+}
+
+.experience-card-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-card h3 {
@@ -195,6 +214,17 @@ body {
 .experience-card p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.experience-card .dates {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience-card .skills {
+  font-size: 1rem;
+  color: #16a085;
 }
 
 .projects {
