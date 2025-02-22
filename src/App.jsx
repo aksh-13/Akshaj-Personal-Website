@@ -57,10 +57,10 @@ function App() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href={resume} download="Akshaj_Shrotri_Resume.pdf">Download Resume</a>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/akshaj-shrotri-54907a202/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinLogo} alt="LinkedIn" className="navbar-logo" />
           </a>
-          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aksh-13" target="_blank" rel="noopener noreferrer">
             <img src={githubLogo} alt="GitHub" className="navbar-logo" />
           </a>
         </div>
@@ -81,21 +81,21 @@ function App() {
           <h2>Experience</h2>
           <div className="experience-cards">
             <div className="experience-card" onClick={() => alert('Experience 1 clicked')}>
-              <img src={experience1Image} alt="Experience 1" />
+              <img src={experience2Image} alt="Experience 1" />
               <div className="experience-card-content">
-                <h3>Experience 1</h3>
-                <p className="dates">January 2020 - December 2020</p>
-                <p>Brief description of experience 1.</p>
-                <p className="skills">Skills Acquired: React, Node.js, JavaScript</p>
+                <h3>Full Stack Developer Intern - Sauka Events</h3>
+                <p className="dates">May 2024 - August 2024</p>
+                <p>Developed a mobile-based website and a QR code drink ordering system using React.js, Node.js, MongoDB, and Python, improving order efficiency by 25% and enhancing customer satisfaction by 15%.</p>
+                <p className="skills">Skills Acquired: React, Node.js, JavaScript, MongoDB</p>
               </div>
             </div>
             <div className="experience-card" onClick={() => alert('Experience 2 clicked')}>
-              <img src={experience2Image} alt="Experience 2" />
+              <img src={experience1Image} alt="Experience 2" />
               <div className="experience-card-content">
-                <h3>Experience 2</h3>
-                <p className="dates">January 2021 - Present</p>
-                <p>Brief description of experience 2.</p>
-                <p className="skills">Skills Acquired: Python, Django, REST APIs</p>
+                <h3>Computer Vision Engineer - MAC Robomaster</h3>
+                <p className="dates">October 2024 - Present</p>
+                <p>Developed a mobile-based website and a QR code drink ordering system using React.js, Node.js, MongoDB, and Python, improving order efficiency by 25% and enhancing customer satisfaction by 15%.</p>
+                <p className="skills">Skills Acquired: Python, OpenCV, MoonDream2, Machine Learning</p>
               </div>
             </div>
           </div>
@@ -107,25 +107,20 @@ function App() {
         <div id="projects" className="projects">
           <h2>Projects</h2>
           <div className="projects-cards">
-            <a href="https://link-to-project1.com" target="_blank" rel="noopener noreferrer" className="project-card">
+            <a href="https://github.com/aksh-13/SustainaBuy" target="_blank" rel="noopener noreferrer" className="project-card">
               <img src={project1Image} alt="Project 1" />
-              <h3>Project 1</h3>
-              <p>Brief description of project 1.</p>
+              <h3>Sustain-A-Buy</h3>
+              <p>Developed a Chrome extension that analyzes the carbon footprint of Amazon products and recommends sustainable alternatives using AI, winning Best Sustainability Hack at a GDSC hackathon.</p>
             </a>
-            <a href="https://link-to-project2.com" target="_blank" rel="noopener noreferrer" className="project-card">
+            <a href="https://github.com/arunt1130/delta-hacks-2025" target="_blank" rel="noopener noreferrer" className="project-card">
               <img src={project2Image} alt="Project 2" />
-              <h3>Project 2</h3>
-              <p>Brief description of project 2.</p>
+              <h3>RapidFire Alerts</h3>
+              <p>Built a real-time wildfire alert system leveraging NASA FIRMS API, OpenStreetMaps, and AI-driven safety guidance, developed within 36 hours at DeltaHacks XI.</p>
             </a>
-            <a href="https://link-to-project3.com" target="_blank" rel="noopener noreferrer" className="project-card">
+            <a href="https://github.com/aksh-13/ChooseFlix" target="_blank" rel="noopener noreferrer" className="project-card">
               <img src={project3Image} alt="Project 3" />
-              <h3>Project 3</h3>
-              <p>Brief description of project 3.</p>
-            </a>
-            <a href="https://link-to-project4.com" target="_blank" rel="noopener noreferrer" className="project-card">
-              <img src={project3Image} alt="Project 4" />
-              <h3>Project 4</h3>
-              <p>Brief description of project 4.</p>
+              <h3>ChooseFlix</h3>
+              <p>Created a dynamic movie search engine integrating TMDB API with React.js, optimizing search functionality for real-time movie discovery and user engagement.</p>
             </a>
           </div>
           <p>
