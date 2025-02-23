@@ -94,7 +94,7 @@ function App() {
               <div className="experience-card-content">
                 <h3>Computer Vision Engineer - MAC Robomaster</h3>
                 <p className="dates">October 2024 - Present</p>
-                <p>Developed a mobile-based website and a QR code drink ordering system using React.js, Node.js, MongoDB, and Python, improving order efficiency by 25% and enhancing customer satisfaction by 15%.</p>
+                <p>At MAC Robomaster, I am currently optimizing computer vision for robotics, improving machine learning models, and integrating systems for seamless bot functionality.</p>
                 <p className="skills">Skills Acquired: Python, OpenCV, MoonDream2, Machine Learning</p>
               </div>
             </div>
